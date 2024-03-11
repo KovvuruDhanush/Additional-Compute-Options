@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AWS Compute Options</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: #007bff;
+        }
+
+        .highlight {
+            background-color: #f0f6ff;
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .highlight:hover {
+            transform: scale(1.02);
+        }
+
+        .link {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .link:hover {
+            text-decoration: underline;
+        }
+
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+
+        .note {
+            font-style: italic;
+            color: #555;
+        }
+
+        @media screen and (max-width: 600px) {
+            .container {
+                padding: 10px;
+            }
+
+            .highlight {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    
+    <div class="container">
+        <h1>AWS Additional Compute Options</h1>
+        <div class="highlight">
+            <h2>AWS Batch</h2>
+            <p>🌟 AWS Batch takes the headache out of managing infrastructure by handling job execution and compute resource
+            management. With it, you can focus on developing applications or analyzing results instead of worrying about
+            infrastructure setup.</p>
+
+            <p>When faced with a large number of tasks on our to-do list, AWS Batch shines by breaking them down into smaller, more
+            manageable pieces. It's like having a virtual team of assistants tackling your workload efficiently.</p>
+
+            <p> Spot instances play a key role here, especially for batch jobs, data analysis, or workloads that can withstand
+            occasional failures. They offer cost-effective compute resources, helping to keep expenses in check while getting the
+            job done.</p>
+
+            <p> Using AWS Batch means running tasks in bulk and scaling automatically as needed. Whether it's processing vast amounts of
+            data or running complex simulations, AWS Batch has your back, ensuring smooth and efficient execution.</p>
+
+            <b>Use Cases</b>
+
+            <ul>
+                <li>Science and Engineering</li>
+                <li>Media and Entertainment</li>
+                <li>Big Data Processing</li>
+                <li>Machine Learning</li>
+            </ul>
+       
+
+
+
+            <p>For more information, check <a class="link"
+                    href="https://aws.amazon.com/batch/faqs/#:~:text=AWS%20Batch%20handles%20job%20execution,should%20consider%20using%20AWS%20Batch">this
+                    link</a>.</p>
+            <p>Watch a video tutorial <a class="link" href="https://www.youtube.com/watch?v=j_iI1DzSi5g">here</a>.</p>
+
+
+        </div>
+        <div class="highlight">
+            <h2>AWS Step Functions</h2>
+            <p>AWS Step Functions provides serverless orchestration for modern applications. It's like having a conductor for your
+            application's workflow, ensuring every step plays harmoniously. 🎵 Orchestration is key—it centrally manages a workflow
+            by breaking it into multiple steps, adding flow logic, and tracking inputs and outputs between them.</p>
+
+            <p>
+
+                In simpler terms, it's like choreographing a dance—ensuring all the different services needed to complete a complex task
+                move in sync, ensuring you get the desired outcome without missing a beat.
+
+            </p>
+
+            <p>
+
+                For example, a Step Functions workflow could take a photo you upload, resize it, apply a filter, and then upload it to a
+                social media platform, seamlessly calling on different AWS services for each step.
+
+            </p>
+
+
+            <p>
+
+                Benefits:
+                
+                Easy to use: Step Functions provides a user-friendly interface for building and managing workflows, making complex
+                orchestrations simple.
+                
+                Error Handling: It automatically handles errors, retries failed steps, and provides built-in error logging for easier
+                debugging.
+
+            </p>
+
+            <p>
+
+                Scalability: Step Functions scale with your application, handling any number of requests without manual intervention.
+            </p>
+
+            <br>
+            <br>
+
+            <p>
+
+
+
+                            <ul>
+                                <li>1.Automate extract, transform, and load (ETL) processes</li>
+                                <li>2.Orchestrate large-scale parallel workloads</li>
+                                <li>3.Orchestrate microservices</li>
+                                <li>4.Automate security and IT functions</li>
+                             
+                            </ul>
+
+
+
+
+            </p>
+
+
+
+            <p>Learn more at <a class="link" href="https://aws.amazon.com/step-functions/features/?pg=ln&sec=hs">this
+                    link</a>.</p>
+            <h3>Benefits:</h3>
+            <ul>
+                <li>Easy to use</li>
+                <li>Error Handling</li>
+                <li>Scalability</li>
+            </ul>
+        </div>
+
+
+
+
+        <div class="highlight">
+            <h2>Elastic Beanstalk</h2>
+
+
+            <p>Elastic Beanstalk streamlines the deployment and scaling of web applications. With this service, deploying applications
+            becomes remarkably easy. You simply upload a ZIP file and create an environment to run it. For instance, if you're
+            deploying a Python application, you can effortlessly set up the Python environment required to run your code. This
+            simplicity makes Elastic Beanstalk an ideal choice for deploying applications with ease.</p>
+
+
+            <p>
+                
+                
+                Additionally, Elastic Beanstalk takes care of various infrastructure management tasks automatically. It handles capacity
+                provisioning, load balancing, scaling, application health monitoring, and instance configuration. This means developers
+                can focus solely on their application code, while Elastic Beanstalk handles the underlying infrastructure complexities.
+
+
+            </p>
+
+            <p>Supported Platforms:</p>
+            <ul>
+                <li>Go</li>
+                <li>Java SE</li>
+                <li>Java with Tomcat</li>
+                <li>.NET Core on Linux</li>
+                <li>Node.js</li>
+                <li>PHP</li>
+                <li>Python</li>
+            </ul>
+        </div>
+
+
+        <div class="highlight">
+            <h2>AWS Lightsail</h2>
+           
+            <p>
+                Build applications and websites quickly with low-cost, pre-configured cloud resources. AWS Lightsail provides a
+                straightforward way to launch and scale virtual private servers and other cloud resources, making it ideal for
+                developers, small businesses, and anyone in need of a simple and affordable computing solution.
+
+
+            </p>
+
+            <p>
+                In simple terms, you don't need to manage anything. With just a few clicks, you can create environments for your
+                applications, making deployment a breeze. 💻
+                
+               
+
+
+
+
+
+
+            </p>
+            <p>Use Cases:</p>
+            <ul>
+                <li>Launch simple web applications</li>
+                <li>Create custom websites</li>
+                <li>Build small business applications</li>
+                <li>Spin up test environments</li>
+            </ul>
+            <p>Start building today! Try Lightsail free for 3 months.</p>
+        </div>
+
+        <p class="note">For more details, read the blog post <a class="link"
+                href="https://aws.amazon.com/blogs/aws/new-amazon-lightsail-for-research-with-all-in-one-research-environments/">New
+                Amazon Lightsail for Research with All-in-One Research Environments</a>.</p>
+    </div>
+</body>
+
+</html>
